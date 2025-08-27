@@ -1,42 +1,50 @@
-/****** Main Styling ******/
-
-body {
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-radius: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #ECF0F1;
+}
+
+h1,
+h2 {
   text-align: center;
 }
 
-.container {
-  padding: 0;
-  margin-top: 40px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.footer {
-  margin-top: 60px;
+input[type="file"] {
+  padding: 5px;
 }
 
-a {
-  color: #2574A9;
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
+button:hover {
+  background-color: #45a049;
 }
 
-input#button {
-  width: 230px;
-}
-
-.view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
+.output-container {
+  margin-top: 30px;
+  background-color: #2e2e2e;
   padding: 20px;
-  width: 60%;
-  min-width: 400px;
+  border-radius: 8px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
